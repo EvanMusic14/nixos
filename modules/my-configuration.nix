@@ -1,10 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # z shell
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
-
   # Containers/Podman/Docker
   virtualisation.containers.enable = true;
   virtualisation = {
