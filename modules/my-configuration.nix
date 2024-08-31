@@ -15,6 +15,13 @@
     };
   };
 
+  # Change bluetooth mode to work with airpods
+  hardware.bluetooth.settings = {
+    General = {
+      ControllerMode = "bredr";
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     podman-compose
   ];
