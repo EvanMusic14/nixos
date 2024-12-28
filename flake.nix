@@ -1,6 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    # nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable"; # unstable
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11"; # 24.11
   };
   outputs = { self, nixpkgs }: {
     nixosConfigurations.emusic = nixpkgs.lib.nixosSystem {
